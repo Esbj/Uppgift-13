@@ -156,7 +156,7 @@ div[role="main"] figure > img{
     height: 123px;
 }
 .subpage h1 {
-    font-size: 300%;
+    font-size: 270%;
     vertical-align: 40px;
     width: 640px;
 }
@@ -168,7 +168,7 @@ hr{
     border-style: double;
     border-width: 3px;
     border-color: #00af64 transparent;
-    margin: 2em;
+    margin: 2em 0;
 }
 .subpage > nav > ul {
     margin: 0;
@@ -191,14 +191,14 @@ TABLE
 .services{
     border: 1px solid #d3d3d3;    
     background: #fff;
-    width: 96%;
+    width: 75%;
     margin: 5% auto 2em;
     border-radius: 5px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
     text-shadow: #fff 1px 1px 1px;
 }
 thead{
-    font-size: 150%
+    font-size: 150%;
 }
 th, td{
     padding: 18px;
@@ -212,9 +212,24 @@ td{
     border-top: 1px solid #e0e0e0;
     border-right: 1px solid #e0e0e0;
 }
-tr:target{
+tr:target {
     background-color: #61d7a4;
 }
-tr:hoover{
+tr:hover {
     background-color: #ff9b73;
+}
+tr{
+    -webkit-transition: background-color 2s;
+       -moz-transition: background-color 2s;
+        -ms-transition: background-color 2s;
+         -o-transition: background-color 2s;
+}
+td:nth-child(1){
+    width: 50px;
+    text-align: left;
+}
+td:nth-child(2){
+    width: 50px;
+    text-align: right;
+    font-family: Consolas, "Lucida Console", Monaco, monospace;
 }
